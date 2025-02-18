@@ -1,3 +1,5 @@
+<img src="https://github.com/kylediaz/dotfiles/blob/main/assets/screenshot.png?raw=true" />
+
 ## Introduction
 
 tldr; I like to use all the trendy stuff.
