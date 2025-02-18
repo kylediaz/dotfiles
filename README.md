@@ -1,57 +1,57 @@
-# dotfiles
+## Introduction
 
-![desktop](previews/desktop.png)
+tldr; I like to use all the trendy stuff.
 
-<details>
+## OS-Enhancers
 
-<summary>More Images</summary>
+1. [Aerospace](https://github.com/nikitabobko/AeroSpace). I use it because it
+   lets me switch between workspaces instantly.
+2. [Raycast](https://raycast.com/). I use it because MacOS Spotlight is
+   depressingly slow. Raycast works instantly. Additionally, having an
+   OS-level command palette is very convenient.
+3. [Karabiner-Elements](jjtps://karabiner-elements.pqrs.org/). I use it to
+   create a hyper key ✦ and to use vim bindings everywhere.
 
-</br>
+## Productivity
 
-![rofi](previews/rofi.png)
+1. [Arc Browser](https://arc.net/) or whichever one of The Browser Company's
+   products isn't currently dead. Using AI to automatically organize tabs and
+   automatically rename downloaded files to human-readable names is great.
+2. [Obsidian](https://obsidian.md/). Everyone wants to be a notes app. Arc
+   had a build-in notes app that was sunset relatively fast. Warp has a built-in
+   notes app that I don't trust to last. Vanilla markdown in a git repository is
+   the only way.
 
-![wm](previews/wm.png)
+## Dev Tools
 
-</details>
+1. [Zed](https://zed.dev/). It's like if Neovim was decent. I probably lose
+   nerd credit for using it instead of Neovim.
+2. [Graphite](https://graphite.dev/). At Meta, we used a tool just like it.
+   Every day I wake up screaming and crying because I don't get to use it anymore.
+   Graphite is my rebound.
+3. [Flox](https://flox.dev/) (Alternatively [DevBox](https://www.jetify.com/devbox/)).
+   They basically give you all the benefits of using Nix but you fortunately don't
+   have to directly deal with Nix. It's a far better devenv solution than [Dev
+   Containers](https://code.visualstudio.com/docs/devcontainers/containers).
+4. [Warp](https://warp.dev/). I mostly use Zed's built-in terminal, but
+   Warp has the best UX out of all standalone terminals.
 
----
+## CLI Tools
 
-The configration files for my Linux desktop. I don't think it assumes anything about your platform. Everything uses the Github Dark color palette when possible.
+I don't use anything particularly unique here.
 
-## Installation
+1. [bat](https://github.com/sharkdp/bat) (better `cat`)
+2. [eza](https://github.com/eza-community/eza) (better `ls`)
+3. [tldr](https://github.com/ahmetb/tldr) (better `man`)
+4. [zoxide](https://github.com/ajeetdsouza/zoxide) (better `cd`)
+5. [fzf](https://github.com/junegunn/fzf) (just better)
 
-For Distros with `dnf` only
+## Themes
 
-```bash
-./install.sh --dotfiles
-```
+I don't make my own themes. I steal themes from
+[catppuccin](https://github.com/catppuccin) and use a [script](scripts/steal)
+to map the colors from pastel purple to my own color palette.
 
-Reboot and choose i3 at the login screen
+## Other
 
-### Firefox
-
-* [SimpleFox](https://github.com/migueravila/SimpleFox)
-* [Stylus w/ recolored Catppuccin themes](Stylus.md)
-* [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) w/ background `#0d1117` and text `#ecf2f8`
-
-### Docker
-
-I like to excusively use VSCode dev containers to program in order to manage my packages and makr sure my host OS doens't get cluttered with random packages.
-
-* [Install Docker](https://docs.docker.com/engine/install/fedora/)
-* [Install Nvidia Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) so docker containers can use GPU
-
-OR
-
-```bash
-./install --docker
-```
-
-## Things Used
-
-- **Distro**: [fedora i3](https://spins.fedoraproject.org/i3/)
-- **Shell**: [fish](https://fishshell.com/)
-- **Terminal**: [Alacritty](https://github.com/alacritty/alacritty)
-- **Editor**: [Neovim](https://neovim.io/) & VSCode
-- **File Manager**: [Ranger](https://github.com/ranger/ranger)
-- **Application launcher**: [rofi](https://github.com/davatorium/rofi)
+1. [TMI about my keybindings](KEYBINDINGS.md)

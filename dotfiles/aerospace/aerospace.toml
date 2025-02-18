@@ -1,0 +1,52 @@
+after-login-command = []
+after-startup-command = []
+
+start-at-login = true
+
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+accordion-padding = 40
+
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'horizontal'
+key-mapping.preset = 'qwerty'
+
+[gaps]
+inner.horizontal = 20
+inner.vertical = 20
+outer.left = 20
+outer.bottom = 20
+outer.top = 20
+outer.right = 20
+
+[mode.main.binding]
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#layout
+ctrl-alt-cmd-slash = 'layout h_tiles'
+ctrl-alt-cmd-comma = 'layout h_accordion'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#focus
+ctrl-alt-cmd-leftSquareBracket = 'focus left'
+ctrl-alt-cmd-rightSquareBracket = 'focus right'
+
+ctrl-alt-cmd-h = 'workspace h'
+ctrl-alt-cmd-j = 'workspace j'
+ctrl-alt-cmd-k = 'workspace k'
+ctrl-alt-cmd-l = 'workspace l'
+ctrl-alt-cmd-semicolon = 'workspace ;'
+ctrl-alt-cmd-u = 'workspace u'
+ctrl-alt-cmd-i = 'workspace i'
+ctrl-alt-cmd-o = 'workspace o'
+ctrl-alt-cmd-p = 'workspace p'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+ctrl-alt-cmd-shift-h = 'move-node-to-workspace h'
+ctrl-alt-cmd-shift-j = 'move-node-to-workspace j'
+ctrl-alt-cmd-shift-k = 'move-node-to-workspace k'
+ctrl-alt-cmd-shift-l = 'move-node-to-workspace l'
+ctrl-alt-cmd-shift-semicolon = 'move-node-to-workspace ;'
+ctrl-alt-cmd-shift-u = 'move-node-to-workspace u'
+ctrl-alt-cmd-shift-i = 'move-node-to-workspace i'
+ctrl-alt-cmd-shift-o = 'move-node-to-workspace o'
+ctrl-alt-cmd-shift-p = 'move-node-to-workspace p'
