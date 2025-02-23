@@ -13,12 +13,12 @@ default-root-container-orientation = 'horizontal'
 key-mapping.preset = 'qwerty'
 
 [gaps]
-inner.horizontal = 20
-inner.vertical = 20
-outer.left = 20
-outer.bottom = 20
-outer.top = 20
-outer.right = 20
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.bottom = 10
+outer.top = 10
+outer.right = 10
 
 [mode.main.binding]
 
@@ -50,3 +50,19 @@ ctrl-alt-cmd-shift-u = 'move-node-to-workspace u'
 ctrl-alt-cmd-shift-i = 'move-node-to-workspace i'
 ctrl-alt-cmd-shift-o = 'move-node-to-workspace o'
 ctrl-alt-cmd-shift-p = 'move-node-to-workspace p'
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = 'move-node-to-workspace p'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace h'
+
+[[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+run = 'move-node-to-workspace j'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = 'move-node-to-workspace o'
