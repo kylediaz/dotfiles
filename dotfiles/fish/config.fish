@@ -6,6 +6,13 @@ if status is-interactive
 	end
 end
 
+function fish_prompt
+    echo '❱ '
+end
+
+function fish_right_prompt
+    echo (prompt_pwd) ' '
+end
 
 pyenv init - | source
 
@@ -22,3 +29,14 @@ set PATH $PATH /Users/kylediaz/.local/bin
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kylediaz/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/kylediaz/Downloads/google-cloud-sdk/path.fish.inc'; end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# pnpm
+set -gx PNPM_HOME "/Users/kylediaz/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
