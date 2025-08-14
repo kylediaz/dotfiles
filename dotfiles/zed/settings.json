@@ -4,33 +4,28 @@
 // documentation: https://zed.dev/docs/configuring-zed
 //
 // To see all of Zed's default settings without changing your
-// custom settings, run the `open default settings` command
-// from the command palette or from `Zed` application menu.
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
- "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
-  },
-  "edit_predictions": {
-    "disabled_globs": [],
-    "mode": "eager_preview"
-  },
-  "show_edit_predictions": true,
   "terminal": {
     "dock": "right"
   },
-  "vim_mode": true,
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
-  "assistant": {
-    "default_model": {
-      "provider": "openai",
-      "model": "gpt-4-turbo"
-    },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "model_parameters": [],
+    "default_profile": "write",
     "version": "2"
   },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "vim_mode": true,
   "ui_font_size": 16,
-  "buffer_font_size": 13.0
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  }
 }

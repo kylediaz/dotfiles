@@ -8,6 +8,7 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "Change caps_lock to command+control+option.",
@@ -27,6 +28,7 @@
                     },
                     {
                         "description": "Vim Navigation",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -128,6 +130,7 @@
                     },
                     {
                         "description": "Change right command+hjkl to arrow keys",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {

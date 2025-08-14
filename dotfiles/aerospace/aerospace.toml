@@ -51,9 +51,32 @@ ctrl-alt-cmd-shift-i = 'move-node-to-workspace i'
 ctrl-alt-cmd-shift-o = 'move-node-to-workspace o'
 ctrl-alt-cmd-shift-p = 'move-node-to-workspace p'
 
+[workspace-to-monitor-force-assignment]
+h = 'main'
+j = 'main'
+k = 'main'
+l = 'main'
+semicolon = 'main'
+u = ['secondary', 'main']
+i = ['secondary', 'main']
+o = ['secondary', 'main']
+p = ['secondary', 'main']
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = 'move-node-to-workspace u'
+
+[[on-window-detected]]
+if.app-id = 'notion.id'
+run = 'move-node-to-workspace u'
+
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace p'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.dia'
+run = 'move-node-to-workspace h'
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
@@ -66,3 +89,4 @@ run = 'move-node-to-workspace j'
 [[on-window-detected]]
 if.app-id = 'com.apple.Music'
 run = 'move-node-to-workspace o'
+

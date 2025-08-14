@@ -6,6 +6,8 @@ vim.opt.syntax="on"
 vim.opt.cursorline=true
 vim.opt.ttyfast=true
 
+vim.opt.termguicolors = true
+vim.cmd('colorscheme onehalflight')
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
